@@ -1,6 +1,6 @@
 # DCI HEM AI
 
-This repository contains supporting material for work involving DALY-CARE data and the safe use of AI in hematology research.
+This repository contains supporting material for work involving DALY-CARE data and the safe use of AI in hematology research. These materials may also serve as a knowledge base for future projects that use large language models (LLMs) as development tools.
 
 ## Repository contents
 
