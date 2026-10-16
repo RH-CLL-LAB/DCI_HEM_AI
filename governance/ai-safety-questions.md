@@ -1,4 +1,4 @@
-# Questions
+# AI Safety and Governance Questions
 
 ## OpenAI accounts
 

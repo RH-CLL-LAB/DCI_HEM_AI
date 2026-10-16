@@ -4,7 +4,7 @@ This repository contains supporting material for work involving DALY-CARE data a
 
 ## Repository contents
 
-- [`FAQ/`](./FAQ/) — questions about data use and safe AI usage
+- [`governance/`](./governance/) — questions about data governance and safe AI usage
 - [`methods/`](./methods/) — methods extracted and summarized from the DALY-CARE publications
 - [`metadata/`](./metadata/) — DALY-CARE clinical metadata summaries and extraction code
 - [`mock_data/`](./mock_data/) — mock DALY-CARE data for development and testing
