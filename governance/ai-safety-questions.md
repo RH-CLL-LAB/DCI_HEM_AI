@@ -7,6 +7,7 @@
 
 ## Computing environment
 
+- Can we run LLMs directly within NGC for DALY-CARE work, and what approvals and computing resources would be needed?
 - When should we use a cloud environment, and when should we use a local environment?
 - If we run models locally, should they run inside Docker?
 - Should we use a virtual server for local or remote agents?
@@ -31,37 +32,27 @@
 
 ### Sensitive data
 
-- Which types of data may be entered into an AI system?
-- May the AI process patient-level, pseudonymized, confidential, or unpublished research data?
-- Must data be anonymized or minimized before use?
-- Where are prompts, uploaded files, outputs, logs, and temporary files stored?
-- How long is the data retained, and how can it be deleted?
+- Which DALY-CARE materials may we use with AI on a personal computer versus within NGC (e.g., mock data, aggregate summaries, unpublished results, or pseudonymized patient-level data)?
+- What may be transferred from NGC to a personal computer or external AI service, and what anonymization, aggregation, or data minimization is required first?
+- For AI tools used on a personal computer or within NGC, where are prompts, outputs, logs, and temporary files stored, can any data leave the environment, and how are retained copies deleted?
 
 ### Access and permissions
 
-- Which files, applications, websites, and networks may the AI access?
-- Should the AI operate with read-only access by default?
-- Which actions always require human approval, such as sending emails, uploading files, changing permissions, or deleting data?
-- How are connected applications and permissions reviewed and revoked?
+- Which project folders, tools, and network connections may AI agents access on a personal computer or within NGC, including any active remote sessions to NGC?
+- Should agents start with read-only access, and which actions require human approval (e.g., changing analysis code, running jobs, transferring files, or deleting data)?
 
 ### Credentials
 
-- How should API keys, passwords, access tokens, and recovery codes be stored?
-- Can the AI read environment variables, browser sessions, or password-manager data?
-- Should agents use separate, limited accounts and short-lived credentials?
-- What is the procedure for rotating or revoking exposed credentials?
+- How should we store NGC login credentials, GitHub tokens, and AI API keys so agents cannot read or expose them through files, environment variables, or active sessions?
+- Where agent authentication is needed, which accounts and permissions are allowed, and how can their access be revoked?
 
 ### Untrusted content
 
-- How should the AI handle instructions found inside emails, websites, PDFs, documents, or code repositories?
-- What should happen if the AI detects a possible prompt-injection or phishing attempt?
-- Are downloaded files and generated code reviewed before they are opened or executed?
+- How should agents handle instructions embedded in DALY-CARE papers, metadata, repositories, or web pages that ask them to access files, run commands, or send data elsewhere?
+- What review is required before running downloaded or AI-generated code on a personal computer or within NGC?
 
 ### Verification and incident response
 
-- Which AI-generated results require human verification?
-- How should references, calculations, analyses, and code be validated?
-- Are agent actions logged and auditable?
-- What should be done if confidential information is accidentally disclosed?
-- Is there a procedure for stopping agents, revoking access, restoring backups, and reporting incidents?
-- Should agents be tested with mock data before they receive access to real systems?
+- How should we test AI-generated analysis code with mock DALY-CARE data before using it with real data within NGC?
+- Which checks are required for AI-generated cohort definitions, calculations, and research summaries before use, and how should code changes and analysis runs be recorded?
+- If an agent exposes DALY-CARE data or makes an unauthorized change, who should we contact, and how do we stop the agent, revoke access, and recover affected files?
